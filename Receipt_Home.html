@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Test</title>
+
+    <!-- START OF CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- BOOSTRAP 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- START OF PYTHON -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</head>
+<body class="bg-dark">                                                                                                              <!-- make the background black -->
+    <div class="text-light">                                                                                                        <!-- make the texts inside the div white -->
+        <div class="row">                                                                                                           <!-- make a row -->
+            <nav class="navbar bg-warning">                                                                                         <!-- make a yellow navbar -->
+                <div class="container-fluid">                                                                                       <!-- make a container to 100% in any device -->
+                    <div class="col-6 text-center text-dark">                                                                       <!-- make a div with he width of 6 in the grid, and making the texts centered and black -->
+                        <h3>Rking's Drum Store</h3>                                                                                 <!-- add text -->
+                    </div>
+                    <div class="col-3">                                                                                             <!-- make a div with the width of 3 in the grid -->
+                        <ul class="navbar-nav">                                                                                     <!-- make parent element of list -->
+                            <li class="nav-item">                                                                                   <!-- make list -->
+                                <a class="nav-link" href="index.html">SKU Generator</a>                                             <!-- link into project(folder) to connect to index.html -->
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3">                                                                                             <!-- make a div with the width of 3 in the grid -->
+                        <ul class="navbar-nav">                                                                                     <!-- make parent element of list -->
+                            <li class="nav-item">                                                                                   <!-- make list -->
+                                <a class="nav-link" href="Receipt_Home.html">Receipt Generator</a>                                  <!-- link into Skillstest(folder) to connect to index.html -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="row text-dark">                                                                                                 <!-- make 2nd row; make texts inside of div black -->
+            <div id="menu" class="container-fluid col-9 p-5">                                                                       <!-- used id to name div menu, and make it width of 9 in grid, while also implementing padding of 5 to the contents of the div -->
+                <h4 class="text-center bg-primary">Receipt Generator</h4>                                                           <!-- make a text size of 4 with the contents centered and make its background blue -->
+                <div class="p-3">                                                                                                   <!-- make div with implementation of padding of 3 to the contents of the div -->
+                    <div class="row bg-light p-2">                                                                                  <!-- make another div to create a row in the div; make background light while also implementing padding of 2 to the contents. This goes on for div 3, 5, 7, 9 -->
+                        <input class="col-6" type="checkbox" id="cymbals1" value =13000>                                            <!-- make checkbox -->
+                        <label class="col-6" for="">Cymbals: Crash - 13,000 Pesos</label>                                           <!-- make labels -->
+                    </div>
+                    <div class="row bg-white p-2">                                                                                  <!-- make another div to create another row in the div; make background brighter than color of light in bootstrap 5, while also implementing padding of 2 to the contents. This goes on for div 4, 6, 8, 10 -->
+                        <input class="col-6" type="checkbox" id="cymbals2" value =13000>
+                        <label class="col-6" for="">Cymbals: Hi-Hat - 13,000 Pesos</label>
+                    </div>
+                    <div class="row bg-light p-2">
+                        <input class="col-6" type="checkbox" id="cymbals3" value =13000>
+                        <label class="col-6" for="">Cymbals: Ride - 13,000 Pesos</label>
+                    </div>
+                    <div class="row bg-white p-2">
+                        <input class="col-6" type="checkbox" id="snare" value =15000>
+                        <label class="col-6" for="">Snare Drum - 15,000 Pesos</label>
+                    </div>
+                    <div class="row bg-light p-2">
+                        <input class="col-6" type="checkbox" id="tom1" value =7000>
+                        <label class="col-6" for="">Left Tom - 7,000 Pesos</label>
+                    </div>
+                    <div class="row bg-white p-2">
+                        <input class="col-6" type="checkbox" id="tom2" value =7000>
+                        <label class="col-6" for="">Righ Tom - 7,000 Pesos</label>
+                    </div>
+                    <div class="row bg-light p-2">
+                        <input class="col-6" type="checkbox" id="tom3" value =9000>
+                        <label class="col-6" for="">Floor Tom - 9,000 Pesos</label>
+                    </div>
+                    <div class="row bg-white p-2">
+                        <input class="col-6" type="checkbox" id="bass" value =14500>
+                        <label class="col-6" for="">Bass Drum w/ pedals- 14,500 Pesos</label>
+                    </div>
+                    <div class="row bg-light p-2">
+                        <input class="col-6" type="checkbox" id="stool" value =4000>
+                        <label class="col-6" for="">stool - 4,000 Pesos</label>
+                    </div>
+                    <div class="row bg-white p-2">
+                        <input class="col-6" type="checkbox" id="drum_sticks" value = 2000>
+                        <label class="col-6" for="">Drum sticks - 2,000 Pesos</label>
+                    </div>
+                </div>
+                <input type="button" py-click="calculating" class="form-control btn btn-secondary p-2 mt-3" value="Calculate">      <!-- make a grey button that is also implemented with padding of 2 and margin top of 3 to the contents -->
+            </div>
+            <div class="col-3 mt-4 text-center">                                                                                    <!-- make div with the width of 3 in grids, and also implemented margin top of 4 and its texts centered -->
+                <h4 class="bg-primary">Receipt</h4>                                                                                 <!-- make text at a size of h4, with the background color of blue -->
+                <div id="output" class="bg-secondary text-light p-5">                                                               <!-- make div for after calculation -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <py-script src="Receipt_Generator.py"></py-script>                                                                              <!-- connect to Receipt_Generator.py -->
+</body>
+</html>

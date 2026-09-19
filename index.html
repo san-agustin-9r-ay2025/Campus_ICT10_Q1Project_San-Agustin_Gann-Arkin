@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- START OF CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- BOOSTRAP 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- START OF PYTHON -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</head>
+</head>
+<body class="bg-dark">
+    <div class="text-light">
+        <div class="row">                                                                                                           <!-- make a row -->
+            <nav class="navbar bg-warning">                                                                                         <!-- make a yellow navbar -->
+                <div class="container-fluid">                                                                                       <!-- make a container to 100% in any device -->
+                    <div class="col-6 text-center text-dark">                                                                       <!-- make a div with the width of 6 in the grid, and making the texts centered and black -->
+                        <h3>Rking's Drum Store</h3>                                                                                 <!-- add text -->
+                    </div>
+                    <div class="col-3">                                                                                             <!-- make a div with the width of 3 in the grid -->
+                        <ul class="navbar-nav">                                                                                     <!-- make parent element of list -->
+                            <li class="nav-item">                                                                                   <!-- make list -->
+                                <a class="nav-link" href="index.html">SKU Generator</a>                                             <!-- link into project(folder) to connect to index.html -->
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3">                                                                                             <!-- make a div with the width of 3 in the grid -->
+                        <ul class="navbar-nav">                                                                                     <!-- make parent element of list -->
+                            <li class="nav-item">                                                                                   <!-- make list -->
+                                <a class="nav-link" href="Receipt_Home.html">Receipt Generator</a>                                  <!-- link into Skillstest(folder) to connect to index.html -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="row">                                                                                                           <!-- make 2nd row; make texts inside of div black -->
+                <div id="menu" class="container-fluid col-9 p-5">                                                                   <!-- used id to name div menu, and make it width of 9 in grid, while also implementing padding of 5 to the contents of the div -->
+                    <h4 class="text-center bg-primary text-dark">SKU Generator</h4>                                                 <!-- make a text size of 4 with the contents centered and make its background blue -->
+                    <div class="p-3">                                                                                               <!-- make div with implementation of padding of 3 to the contents of the div -->
+                        <div>
+                            <label for="">Category</label>                                                                          <!-- create label -->
+                            <select id="types" class="form-control">                                                                <!-- create selection with form control -->
+                                <option value="Idiophones">Idiophones</option>                                                      <!-- option 1 -->
+                                <option value="Membranophones">Membranophones</option>                                              <!-- option 2 -->
+                                <option value="Tools">tools</option>                                                                <!-- option 3 -->
+                            </select>
+                            <label for="">Product Names</label>                                                                     <!-- create another label -->
+                            <input type="text" class="form-control" id="product" value="PROD" placeholder="ex. Snare Drum">         <!-- create input for text-->
+                            <label for="">Stock Quantity</label>                                                                    <!-- create another label -->
+                            <input type="number" class="form-control" id="stock" placeholder="ex. 20, 40, 60">                      <!-- create input for number -->
+                        </div>
+                    </div>
+                    <input type="button" py-click="generatingSKU" class="form-control btn btn-secondary p-2 mt-3" value="generating"><!-- creating a grey button -->
+                </div>
+            <div class="col-3 mt-4 text-center">                                                                                    <!-- make another div with the width of 3 in grids, margin top of 4, and contents centered-->
+                <h4 class="bg-primary">SKU</h4>                                                                                     <!-- create text of the size h4, and a background color blue -->
+                <div id="output" class="bg-secondary text-light p-5">                                                               <!-- make div for after generation -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <py-script src="main.py"></py-script>                                                                                           <!-- connect to main.py -->
+</body>
+</html>
